@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #eee;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+
+header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+    display: inline;
+    padding-right: 10px;
+
+}
+
+
+/* Home Page CSS */
+
+.top-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 70px;
+    background-color: #FEF4EA;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content h1 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    /* font-weight: 900; */
+    margin: 0;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-right: .15em solid #23B5B3;
+    white-space: nowrap;
+    /* margin: 0 auto; */
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.content p {
+    color: black;
+    font-size: 20px;
+}
+
+.main-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-image img {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Middle page */
+.page_I {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    background-color: #FEF4EA;
+}
+
+.card-container {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 100%;
+}
+
+.page_II {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    padding: 80px;
+    text-align: left;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #FEF4EA;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.left {
+    flex: 1;
+    margin-right: 50px;
+    width: 60%;
+    font-size: 20px;
+}
+
+.right {
+    /* flex: 1; */
+    margin-left: 70px;
+    width: 40%;
+}
+
+.right h5 {
+    background-color: #FF5C36;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.right h5:hover {
+    background-color: #FF8657;
+    cursor: pointer;
+    animation: moveLeft 0.5s forwards;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+.bottom-container {
+    padding: 100px;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.bottom-left {
+    flex: 1;
+    margin-top: 15%;
+    text-decoration: none;
+}
+
+.bottom-left ul {
+    list-style: none;
+    /* Remove default list style */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.bottom-left ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.bottom-left ul li a {
+    color: inherit;
+    /* Inherits the color from the parent element */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.bottom-left h2 {
+    font-family: "Sixtyfour", "sans-serif";
+    padding: 20px;
+}
+
+.bottom-right {
+    flex: 1;
+    /* padding: 50px; */
+    text-align: center;
+    /* margin-top: 2%; */
+}
+
+/* Footer CSS */
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+footer p {
+    color: #ccc;
+}
+
