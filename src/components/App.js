@@ -35,9 +35,9 @@ function App() {
                         <Route path="/signup" element={<Signup/>} />
                         <Route path="/acadProducts" element={<AcadProducts />} />
                     </Routes>
+                {/* <Footer /> */}
                 </Router>
                                 
-                <Footer />
             </div>
     );
 }

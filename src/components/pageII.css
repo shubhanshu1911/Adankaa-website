@@ -1,0 +1,77 @@
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInFromBottom 1s ease-out;
+}
+
+.page_II {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    padding: 80px;
+    text-align: left;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #F6F6F6;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.left {
+    flex: 1;
+    margin-right: 50px;
+    width: 60%;
+    font-size: 20px;
+}
+
+.right {
+    margin-left: 70px;
+    width: 40%;
+}
+
+.right h5 {
+    background-color: #FF5C36;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.right h5:hover {
+    background-color: #FF8657;
+    cursor: pointer;
+    animation: moveLeft 0.5s forwards;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

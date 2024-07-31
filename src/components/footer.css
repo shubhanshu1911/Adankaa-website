@@ -1,0 +1,23 @@
+/* Footer.css */
+.footer {
+    position: relative;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 15px;
+    /* Adjust gap between icons as needed */
+}
+
+.social-icon {
+    font-size: 24px;
+    /* Adjust icon size as needed */
+    color: #333;
+    /* Adjust color if necessary */
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #FF5C36;
+    /* Change color on hover if desired */
+}

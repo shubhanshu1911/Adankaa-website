@@ -54,7 +54,7 @@ header h1 {
     padding-bottom: 20px;
     margin-bottom: 0;
     overflow: hidden;
-    border-right: .15em solid #23B5B3;
+    border-right: .15em solid #FEF4EA;
     white-space: nowrap;
     /* margin: 0 auto; */
     letter-spacing: .15em;
@@ -92,91 +92,6 @@ header h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-/* Middle page */
-.page_I {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    background-color: #FEF4EA;
-}
-
-.card-container {
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;    
-    justify-content: space-between;
-    gap: 50px;
-    max-width: 100%;
-}
-
-.page_II {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    padding: 80px;
-    text-align: left;
-    font-weight: 500;
-    font-style: normal;
-    background-color: #FEF4EA;
-}
-
-.text {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.left {
-    flex: 1;
-    margin-right: 50px;
-    width: 60%;
-    font-size: 20px;
-}
-
-.right {
-    /* flex: 1; */
-    margin-left: 70px;
-    width: 40%;
-}
-
-.right h5 {
-    background-color: #FF5C36;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: left;
-    color: #fff;
-    transition: background-color 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.right h5:hover {
-    background-color: #FF8657;
-    cursor: pointer;
-    animation: moveLeft 0.5s forwards;
-}
-
-@keyframes moveLeft {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-20px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
 }
 
 
@@ -225,7 +140,7 @@ header h1 {
     /* margin-top: 2%; */
 }
 
-/* Footer CSS */
+/* Footer CSS
 footer {
     position: absolute;
     text-align: center;
@@ -236,5 +151,5 @@ footer {
 
 footer p {
     color: #ccc;
-}
+} */
 

@@ -1,0 +1,27 @@
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInFromBottom 1s ease-out;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    background-color: #FFF;
+}
