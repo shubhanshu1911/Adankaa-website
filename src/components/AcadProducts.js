@@ -1,19 +1,46 @@
 import React from 'react';
-import Card from './Card';
+import "./products.css"
 
 const AcadProducts = () => {
     return (
-        <div className="middle-container">
-            <h1 > <span style={{ borderBottom: '5px dotted #23B5B3' }} >Our</span> Academics Products</h1>
+        <div className="product">
+            <h1 style={{ color: '#373A40', marginTop: '120px', textAlign: 'center' }}>Our Academic Products</h1><br />
+
             <div className="card-container">
-                <Card
-                    title="RoMo Kit Basic"
-                    text="Introductory kit for beginners, teaching fundamental robotics concepts through hands-on building and programming exercises with arudio "
-                />
-                <Card
-                    title="RoMo Kit Advanced"
-                    text="Integrates vision systems and AI capabilities, enabling robots to perceive their environment and autonomously learn, adapt, and perform complex tasks through image processing and machine learning technologies."
-                />
+
+                <div className="card mb-3 w-50 p-3 custom-card" style={{ marginLeft: '300px', backgroundColor: '#FF5C36' }}>
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="Images/basic.png" className="img-fluid rounded-start custom-img" alt="..." width="300" height="300" />
+                        </div>
+                        <div className="col-md-8 text-end">
+                            <div className="card-body">
+                                <h5 className="card-title">RoMo Kit Basic</h5>
+                                <p className="card-text text-light">
+                                    Introductory kit for beginners, teaching fundamental robotics concepts through hands-on building and programming exercises with arduino
+                                </p>
+                                <a href="/" className="btn btn-light mt-auto" style={{ textAlign: 'center' }}>Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card mb-3 w-50 p-3" style={{ marginLeft: '300px', backgroundColor: '#FF5C36' }}>
+                    <div className="row g-0">
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <h5 className="card-title">RoMo Kit Advanced</h5>
+                                <p className="card-text text-light">Integrates vision systems and AI capabilities, enabling robots to perceive their environment and autonomously learn, adapt, and perform complex tasks through image processing and machine learning technologies.</p>
+                                <a href= "/" className="btn btn-light mt-auto" style={{ textAlign: 'center' }}>Buy Now</a>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <img src="Images/advanced.png" className="img-fluid rounded-start custom-img2" alt="..." width="400" height="400" />
+
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     );

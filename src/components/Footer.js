@@ -54,22 +54,17 @@ function Footer() {
                     {/* Additional content or links can go here */}
                 </div>
 
-                <div className="col mb-3 col-lg">
-                    <h5>Our Products</h5>
+                <div className="col mb-3">
+                    <h5>Industial Products</h5>
                     <ul className="nav flex-column">
                         <li className="nav-item mb-2">
                             <a href="/" className="nav-link p-0 text-body-secondary">
-                                Basic RoMo Kit
+                                Industry Product
                             </a>
                         </li>
                         <li className="nav-item mb-2">
                             <a href="/" className="nav-link p-0 text-body-secondary">
-                                Advanced RoMo Kit
-                            </a>
-                        </li>
-                        <li className="nav-item mb-2">
-                            <a href="/" className="nav-link p-0 text-body-secondary">
-                                Industry Products  
+                                Industry Products
                             </a>
                         </li>
                         <li className="nav-item mb-2">
@@ -94,6 +89,25 @@ function Footer() {
                         </li>
                     </ul>
                 </div>
+
+                <div className="col mb-3 col-lg">
+                    <h5>Academic Products</h5>
+                    <ul className="nav flex-column">
+                        <li className="nav-item mb-2">
+                            <a href="/" className="nav-link p-0 text-body-secondary">
+                                Basic RoMo Kit
+                            </a>
+                        </li>
+                        <li className="nav-item mb-2">
+                            <a href="/" className="nav-link p-0 text-body-secondary">
+                                Advanced RoMo Kit
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                
 
             </footer>
                 <div className="col mb-3 d-flex justify-content-center align-items-center ">

@@ -1,0 +1,28 @@
+.product{
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+}
+/* CustomCard.css */
+.custom-card {
+    position: relative;
+    overflow: visible;
+}
+
+.custom-img {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.custom-img2{
+    position: absolute;
+        top: 52%;
+        right: -75px;
+        transform: translateY(-50%);
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
+}
