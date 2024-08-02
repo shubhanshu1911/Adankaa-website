@@ -1,5 +1,6 @@
 import React from 'react';
-import "./products.css"
+import { Link } from 'react-router-dom';
+import "./products.css";
 
 const AcadProducts = () => {
     return (
@@ -17,9 +18,9 @@ const AcadProducts = () => {
                             <div className="card-body">
                                 <h5 className="card-title">RoMo Kit Basic</h5>
                                 <p className="card-text text-light">
-                                    Introductory kit for beginners, teaching fundamental robotics concepts through hands-on building and programming exercises with arduino
+                                    Introductory kit for beginners, teaching fundamental robotics concepts through hands-on building and programming exercises with Arduino
                                 </p>
-                                <a href="/" className="btn btn-light mt-auto" style={{ textAlign: 'center' }}>Buy Now</a>
+                                <Link to="/acadProducts/ProductDetails" className="btn btn-light mt-auto" style={{ textAlign: 'center' }}>Buy Now</Link>
                             </div>
                         </div>
                     </div>
@@ -31,16 +32,15 @@ const AcadProducts = () => {
                             <div className="card-body">
                                 <h5 className="card-title">RoMo Kit Advanced</h5>
                                 <p className="card-text text-light">Integrates vision systems and AI capabilities, enabling robots to perceive their environment and autonomously learn, adapt, and perform complex tasks through image processing and machine learning technologies.</p>
-                                <a href= "/" className="btn btn-light mt-auto" style={{ textAlign: 'center' }}>Buy Now</a>
+                                <Link to="/acadProducts/ProductDetails" className="btn btn-light mt-auto" style={{ textAlign: 'center' }}>Buy Now</Link>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <img src="Images/advanced.png" className="img-fluid rounded-start custom-img2" alt="..." width="400" height="400" />
-
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     );

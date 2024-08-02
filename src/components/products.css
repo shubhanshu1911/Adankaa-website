@@ -1,9 +1,3 @@
-.product{
-    margin-top: 20px;
-    font-family: "Roboto", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-}
 /* CustomCard.css */
 .custom-card {
     position: relative;
@@ -15,14 +9,182 @@
     top: 50%;
     left: -20px;
     transform: translateY(-50%);
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-.custom-img2{
+.custom-img2 {
     position: absolute;
-        top: 52%;
-        right: -75px;
-        transform: translateY(-50%);
-        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    top: 52%;
+    right: -75px;
+    transform: translateY(-50%);
+}
 
+.carousel-item {
+    position: relative;
+    overflow: visible;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* products.css */
+
+
+body {
+    /* font-family: Helvetica, sans-serif; */
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    display: flex;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 2px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    right: 260px;
+    text-align: left;
+}
+
+.right {
+    left: 270px;
+    text-align: left;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    animation: slideUp 1s ease-out forwards;
+}
+
+.initial-hidden {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
 }

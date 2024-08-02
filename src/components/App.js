@@ -10,6 +10,7 @@ import {
     Route,
 } from "react-router-dom";
 import AcadProducts from "./AcadProducts";
+import ProductDetails from "./ProductDetails"
 
 function App() {
     // const [alert, setAlert] = useState(null);
@@ -34,6 +35,7 @@ function App() {
                         <Route path="/login" element={<Login />} />
                         <Route path="/signup" element={<Signup/>} />
                         <Route path="/acadProducts" element={<AcadProducts />} />
+                        <Route path="/acadProducts/ProductDetails" element={<ProductDetails />} />
                     </Routes>
                 {/* <Footer /> */}
                 </Router>
