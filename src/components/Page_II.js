@@ -41,7 +41,7 @@ const Page_II = () => {
                     <h5>Robotic Systems for Education and Industry</h5>
                     <h5>AI & Vision Integrated Systems</h5>
                     <h5>Computer Programming and Scientific R&D</h5>
-                    <h5>Material handling Systems</h5>
+                    <h5>Material Handling Systems</h5>
                     <h5>Air Pollution Control Systems</h5>
                 </div>
             </div>

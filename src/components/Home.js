@@ -5,6 +5,7 @@ import PageII from './Page_II';
 import About from './About';
 import MiddleContainerIII from './MiddleContainerIII';
 import Footer from './Footer';
+import Partner from './Partner';
 // import BottomContainer from './Bottom_Container';
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
             <About />
             <PageII />
             <PageI />
+            <Partner />
             <Footer />
             {/* <MiddleContainerIII /> */}
             {/* <BottomContainer /> */}
