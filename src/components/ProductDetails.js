@@ -48,7 +48,7 @@ function ProductDetails() {
                 <div className={`col mb-5 col-lg ${isVisible ? 'slide-up' : 'initial-hidden'}`} style={{ paddingLeft: '40px', marginTop: '150px', textAlign: 'left' }}>
                     <h2>RoMo Kit Basic</h2>
                     <p>Introductory kit for beginners, teaching fundamental robotics concepts through hands-on building and programming exercises.</p>
-                    <button type="button" style={{ color: 'white', textDecoration: 'none', backgroundColor: '#FF5C36' }} className="btn btn-link">Get in Touch</button>
+                    <Link type="button" to = "/contact" style={{ color: 'white', textDecoration: 'none', backgroundColor: '#FF5C36' }} className="btn btn-link">Get in Touch</Link>
                 </div>
             </div>
 

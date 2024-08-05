@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+// import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
     const navigate = useNavigate();
@@ -51,12 +52,14 @@ const Header = () => {
                                     Products
                                 </Link>
                                 <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" to="/">RoMo Kit Basic</Link></li>
-                                    <li><Link className="dropdown-item" to="/">RoMo Kit Advance</Link></li>
+                                    <li><Link className="dropdown-item" to="/acadProducts/ProductDetails">RoMo Kit Basic</Link></li>
+                                    <li><Link className="dropdown-item" to="/acadProducts/ProductDetails">RoMo Kit Advance</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#">Contact Us</Link>
+                                <Link className="nav-link" to="/contact">
+                                    Contact Us
+                                </Link>
                             </li>
                         </ul>
                         {!localStorage.getItem('token') ? (

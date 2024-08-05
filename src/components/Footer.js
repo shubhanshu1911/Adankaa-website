@@ -10,7 +10,7 @@ import "./footer.css"
 
 function Footer() {
     return (
-        <div className="container">
+        <div id = "footer" className="container">
             <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" style={{padding: '0'}}>
                 <div className="col mb-6 col-lg-5">
                     <a href="/" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
@@ -94,12 +94,12 @@ function Footer() {
                     <h5>Academic Products</h5>
                     <ul className="nav flex-column">
                         <li className="nav-item mb-2">
-                            <a href="/" className="nav-link p-0 text-body-secondary">
+                            <a href="/acadProducts/ProductDetails" className="nav-link p-0 text-body-secondary">
                                 Basic RoMo Kit
                             </a>
                         </li>
                         <li className="nav-item mb-2">
-                            <a href="/" className="nav-link p-0 text-body-secondary">
+                            <a href="/acadProducts/ProductDetails" className="nav-link p-0 text-body-secondary">
                                 Advanced RoMo Kit
                             </a>
                         </li>

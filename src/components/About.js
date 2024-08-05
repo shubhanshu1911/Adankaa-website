@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import BarChartIcon from '@mui/icons-material/BarChart';
 import "./about.css";
+import { Link } from "react-router-dom";
 
 function About() {
     const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +47,7 @@ function About() {
                         We are at the forefront of technological innovation, dedicated to developing advanced solutions in AI and Vision Integrated Systems, Robotic Systems for Education and Industry, Computer Programming and Scientific R&D, Material Handling Systems, and Air Pollution Control Systems. Our commitment to excellence and innovation drives us to deliver cutting-edge products that empower users across various sectors. With a focus on quality, sustainability, and practical learning, we strive to make a significant impact in the world of technology and education.
                     </h5><br />
                     <br />
-                    <button type="button" style={{ color: 'white', textDecoration: 'none', backgroundColor: '#FF5C36' }} className="btn btn-link">Get in Touch</button>
+                    <Link type="button" to= "/contact" style={{ color: 'white', textDecoration: 'none', backgroundColor: '#FF5C36' }} className="btn btn-link">Get in Touch</Link>
                 </div>
                 <div className="col-sm-4">
                     <span style={{ height: '300px', width: '300px', display: 'inline-block' }} className={isVisible ? 'slide-in' : ''}>

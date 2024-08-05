@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import AcadProducts from "./AcadProducts";
 import ProductDetails from "./ProductDetails"
+import Contact from "./Contact";
 
 function App() {
     // const [alert, setAlert] = useState(null);
@@ -34,6 +35,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/login" element={<Login />} />
                         <Route path="/signup" element={<Signup/>} />
+                        <Route path="/contact" element={<Contact />} />
                         <Route path="/acadProducts" element={<AcadProducts />} />
                         <Route path="/acadProducts/ProductDetails" element={<ProductDetails />} />
                     </Routes>
